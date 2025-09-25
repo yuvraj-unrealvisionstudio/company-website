@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Account & Data Deletion — Clothing Catalyst</title>
+  <meta name="description" content="How to delete your Clothing Catalyst account and what data will be removed.">
+  <style>
+    :root{--bg:#f7f8fb;--card:#ffffff;--accent:#2b6cb0;--muted:#6b7280}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial,sans-serif;background:var(--bg);margin:0;color:#0f172a}
+    .container{max-width:880px;margin:48px auto;padding:20px}
+    .card{background:var(--card);border-radius:12px;padding:28px;box-shadow:0 6px 24px rgba(15,23,42,0.06)}
+    h1{margin:0 0 8px;font-size:22px}
+    p.lead{color:var(--muted);margin:0 0 18px}
+    .section{margin-top:18px}
+    ul{margin:8px 0 0 20px}
+    code{background:#eef2ff;padding:2px 6px;border-radius:6px;font-size:90%}
+    .note{background:#fff7ed;border-left:4px solid #f59e0b;padding:12px;border-radius:8px;margin-top:12px}
+    a.button{display:inline-block;background:var(--accent);color:#fff;padding:10px 14px;border-radius:10px;text-decoration:none}
+    footer{margin-top:18px;color:var(--muted);font-size:13px}
+    .meta{font-size:13px;color:var(--muted);margin-top:8px}
+  </style>
+</head>
+<body>
+  <main class="container">
+    <article class="card">
+      <h1>Account & Data Deletion — <strong>Clothing Catalyst</strong></h1>
+      <p class="lead">Clothing Catalyst — Catalyse Your Style (by Unreal Vision Studio). This page explains how to delete your account and what data will be removed.</p>
+
+      <section class="section">
+        <h2>How to delete your account</h2>
+        <ol>
+          <li>Open the <strong>Clothing Catalyst</strong> mobile app.</li>
+          <li>Go to <code>Profile</code> → <code>Delete Account</code>.</li>
+          <li>Follow the on-screen confirmation steps. Deleting your account is permanent.</li>
+        </ol>
+        <p class="meta">If you cannot access the app, you may request deletion by emailing <a href="mailto:info@unrealvisionstudio.com">info@unrealvisionstudio.com</a>. Please include the email address associated with your account and the phrase <strong>"Account Deletion Request"</strong> in the subject line.</p>
+      </section>
+
+      <section class="section">
+        <h2>Data that will be deleted</h2>
+        <p>When you delete your account via the app, we will permanently delete the following data from our active systems and cloud storage:</p>
+        <ul>
+          <li>Account profile (email, display name, settings)</li>
+          <li>Uploaded wardrobe photos and images stored on Amazon S3</li>
+          <li>Clothing items, tags (type, material, style, weight) and recommendations</li>
+          <li>User-generated preferences and app-specific metadata</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>Data that may be retained</h2>
+        <p>In certain limited cases we may retain some information for legal, security or business reasons:</p>
+        <ul>
+          <li>Transaction or billing records (if applicable) — retained only as required by law.</li>
+          <li>Aggregate, anonymized analytics that cannot be tied back to an individual user.</li>
+          <li>Short-term logs or backups: we remove data from active storage immediately and purge associated backups within <strong>30 days</strong> unless retention is required by law.</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>How we delete S3 data</h2>
+        <p>When an account is deleted we remove the user's images from our Amazon S3 buckets and delete related database records. We also run a background job to ensure eventual consistency and remove any copies from caches. This process typically completes within <strong>24–72 hours</strong>.</p>
+        <div class="note">If you see any content that you believe should have been deleted after that window, contact <a href="mailto:info@unrealvisionstudio.com">info@unrealvisionstudio.com</a> and we will investigate promptly.</div>
+      </section>
+
+      <section class="section">
+        <h2>Questions or support</h2>
+        <p>If you need help deleting your account or have questions about data retention, email <a href="mailto:info@unrealvisionstudio.com">info@unrealvisionstudio.com</a> with the subject <strong>Account Deletion Request</strong>. We aim to respond within 2 business days.</p>
+      </section>
+
+      <footer>
+        <div class="meta">Developer: Unreal Vision Studio — Clothing Catalyst</div>
+        <div class="meta">Last updated: September 25, 2025</div>
+      </footer>
+    </article>
+  </main>
+</body>
+</html>
